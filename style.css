@@ -14,10 +14,20 @@
     }
     
 } */
+*{
+    
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #a6abad;
+
+}
 .main-content{
     
     
-    height: 1000px;
+   min-height: 1000px;
     width: 90%;
     margin: 20px auto;
     display: grid;
@@ -28,12 +38,18 @@
 }
 /* .left-section :start=================> */
 .left-section{
+    background-color: black;
     color: white;
-    background-color:black;
+   
+    grid-column: span 1 ;
+   
+
+}
+.left-content{
     padding: 1rem;
 }
-.left-section .Pofile-image{
-    padding: 1rem;
+.Pofile-image{
+    
     display: block;
     text-align: center;
     margin: auto;
@@ -113,7 +129,10 @@
  /* .left-section :start=================> */ 
 
 .right-section{
-    background-color: wheat;
+    grid-column: span 1 / span 2;
+    background-color:whitesmoke;
+    width: 90%;
+
 }
 
 .right-main-content{
